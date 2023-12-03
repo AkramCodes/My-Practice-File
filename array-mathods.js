@@ -9,7 +9,7 @@
 
 
 
-let Akram = ['Akram' , 'Hassan' , 'Vikky' , 'Himanshu' , 'Saqib']
+// let Akram = ['Akram' , 'Hassan' , 'Vikky' , 'Himanshu' , 'Saqib']
 
 
 
@@ -110,4 +110,60 @@ let Akram = ['Akram' , 'Hassan' , 'Vikky' , 'Himanshu' , 'Saqib']
 
    // console.log(Akram)
 
+
+
+   // // Multidimantional Array 
+
+   // let hassu = [['1', '2', '3'],['4','5','6'],['7','8','9']]
+
+   // let saqib = hassu.flat()
+
+   // // console.log(hassu[2][1])
+
+   // console.log(saqib)
    
+
+   // Slice() Function 
+   // let fruitsArray = ["apple", "banana", "orange", "grape", "strawberry", "kiwi", "watermelon", "pineapple", "mango", "pear"];
+
+
+   // document.write(fruitsArray)
+
+   // let Fruit = fruitsArray.slice(1,6)
+
+   // console.log(Fruit)
+
+   // sort() function 
+
+   // let mathods = fruitsArray.sort()
+
+   // document.write(mathods)
+
+   // let reserv =fruitsArray.reverse()
+
+   // document.write(reserv)
+
+
+
+   // fined max Number in this array
+
+//    let studentMarks = [85, 72, 90, 65, 78, 92, 88, 70, 95, 81];
+
+//    let max = studentMarks[0]
+//    for(i=0; i<studentMarks.length; i++){
+// if(studentMarks[i]>max){
+//    max = studentMarks[i]
+// }
+
+//    }
+
+//    console.log(max)
+
+
+
+
+
+
+
+
+

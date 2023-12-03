@@ -1,0 +1,12 @@
+
+setTimeout(function(){
+   // alert('Hello ka world')
+},5000)
+
+let breathing = setInterval(function(){
+    console.log('breathing.....')
+},1000)
+
+setTimeout(function(){
+    clearInterval(breathing)
+},5000)

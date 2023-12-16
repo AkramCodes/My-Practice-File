@@ -1,0 +1,35 @@
+function addTask(){
+    let input = document.querySelector("#task") //single element
+    let value = input.value //value of the user's input
+
+    if(value==''){
+        alert('Enter the task name to add ')
+        return 
+    }
+
+    //console.log
+    //console.warn
+    //console.info
+    //console.error
+    console.log(value)
+    
+    let html = `
+    <li class='task-list-item'>
+                <span>${value}</span>
+                <button onclick="removeTask(this)">X</button>
+            </li>
+    `
+    let list = document.querySelector(".task-list")
+    list.innerHTML += html
+
+    input.value = ''
+}   
+
+
+function removeTask(btn){
+    console.log('remvoved')
+    //
+    btn.parentNode.remove()
+}
+
+--

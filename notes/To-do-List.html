@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .container{
+        width: 400px;
+        height: auto;
+        border: 1px solid black;
+        margin: auto;
+        text-align: center;
+
+        
+    }
+    h2{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    #task{
+        width: 300px;
+        height: 30px;
+        outline: none;
+        border: none;
+        margin-left: 10px;
+        margin-bottom: 30px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    #DateTime{
+        width: 300px;
+        height: 30px;
+        outline: none;
+        border: none;
+        margin-left: 10px;
+        margin-bottom: 30px;
+        font-size: 12px;
+        font-weight: 400;
+
+    }
+    
+    #addTask{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: green;
+        color: white;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        width: 300px;
+        height: 30px;
+        margin-left: 50px;
+        margin-bottom: 30px;
+        font-size: 12px;
+        font-weight: 400;
+
+       
+        
+    }
+
+    .taskList{
+       margin-right: 20px;
+       margin-bottom: 30px;
+       
+      
+    }
+
+    
+
+    li{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        font-size: 25px;
+        color: blue;
+        list-style: none;
+       
+
+
+    }
+
+    button{
+        display: flex;
+        font-size: 25px;
+        color: blue;
+       width: 30px;
+    }
+</style>
+
+<body>
+    
+
+    <div class="container">
+        
+  <h2> To Do List</h2>
+  <input type="text" id="task" placeholder="Enter Your Task">
+  <input type="datetime-local" id="DateTime">
+  <button id="addTask" onclick="AddTask()">Add Task</button>
+
+  <ul class="taskList">
+        
+  </ul>
+
+
+    </div>
+
+   
+
+    <script src="To-Do-List.js"></script>
+</body>
+</html>

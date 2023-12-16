@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <!-- DOM: document object model -->
+    <h1 id="demo">Hello world</h1>
+    <script>
+        //to manipulate any html element, first we have to select this
+        //select by id
+        //by  class name
+        //by tagname
+        //by css selectors: .clasname, #id, [attr], div p, div+p
+        //content base changed, style based change
+
+
+        //1. how to select element by id
+        let h1 = document.getElementById("demo")
+        //innerText, innerHTML
+        // h1.innerText = 'Hello chhotu bhiya'
+        h1.innerHTML = `hello chhotu <a href=''>bhiya</a>`
+
+
+        //text-decoration: css syntax
+        //textDecoration: js syntax
+        h1.style.color='red'
+        h1.style.textDecoration = 'underline'
+        h1.style.fontWeight = 100
+        h1.style.fontSize='50px'
+        console.log(h1)
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>

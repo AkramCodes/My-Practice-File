@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        ul li a {
+            display: block;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+
+        }
+    </style>
+</head>
+
+<body id="body">
+    <ul id="navbar">
+    </ul>
+    <br>
+    <h1>heading of the page</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque numquam architecto libero similique adipisci,
+        aut, alias veritatis iure praesentium et, odit vel nesciunt. Aliquam quasi quia iusto ratione numquam!
+        Asperiores.</p>
+
+    <button onclick="darkmodex()">Change Mode</button>
+    <script>
+        let items = ['Home', 'About us', 'Services', 'Plans', 'Pricing', 'Contact Us', 'Support']
+        let navbar = document.getElementById("navbar")
+        for (i = 0; i < items.length; i++) {
+            navbar.innerHTML += `<li><a href=''>${items[i]}</a></li>`
+        }
+        navbar.style.display = 'flex'
+        navbar.style.listStyle = 'none'
+        navbar.style.justifyContent = 'space-between'
+        navbar.style.backgroundColor = 'darkblue'
+        navbar.style.paddingLeft = 0
+        navbar.style.margin = 0
+
+
+
+        let mode = true //true:light, false:dark
+        function darkmodex() {
+            let body = document.getElementById("body")
+
+            if (mode == true) {
+                body.style.backgroundColor = '#222'
+                body.style.color = 'white'
+                mode=false
+            } else {
+                body.style.backgroundColor = 'white'
+                body.style.color = '#222'
+                mode=true
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

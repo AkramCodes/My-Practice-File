@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <script>
+        let demo = document.getElementById("demo")
+        demo.style.width = '250px'
+        demo.style.height = '250px'
+        demo.style.border = '1px solid black'
+        demo.style.backgroundColor='skyblue'
+        demo.style.padding ='20px'
+        demo.style.borderRadius='10px'
+        demo.style.boxShadow='0 0 16px rgba(0,0,0,0.5)'
+        demo.innerText = 'hello world'
+        demo.innerHTML += '<h1>Hello world</h1>'
+        demo.innerHTML +=`<img src='https://s3-eu-west-1.amazonaws.com/blog-ecotree/blog/0001/01/ad46dbb447cd0e9a6aeecd64cc2bd332b0cbcb79.jpeg' style='max-width:100px'>`
+    </script>
+</body>
+</html>

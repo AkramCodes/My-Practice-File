@@ -4,104 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="To-Do-List.css">
 </head>
-
-<style>
-    .container{
-        width: 400px;
-        height: auto;
-        border: 1px solid black;
-        margin: auto;
-        text-align: center;
-
-        
-    }
-    h2{
-        font-size: 20px;
-        font-weight: 600;
-    }
-
-    #task{
-        width: 300px;
-        height: 30px;
-        outline: none;
-        border: none;
-        margin-left: 10px;
-        margin-bottom: 30px;
-        font-size: 12px;
-        font-weight: 400;
-    }
-
-    #DateTime{
-        width: 300px;
-        height: 30px;
-        outline: none;
-        border: none;
-        margin-left: 10px;
-        margin-bottom: 30px;
-        font-size: 12px;
-        font-weight: 400;
-
-    }
-    
-    #addTask{
-        display: block;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background-color: green;
-        color: white;
-        outline: none;
-        border: none;
-        border-radius: 5px;
-        width: 300px;
-        height: 30px;
-        margin-left: 50px;
-        margin-bottom: 30px;
-        font-size: 12px;
-        font-weight: 400;
-
-       
-        
-    }
-
-    .taskList{
-       margin-right: 20px;
-       margin-bottom: 30px;
-       
-      
-    }
-
-    
-
-    li{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        font-size: 25px;
-        color: blue;
-        list-style: none;
-       
-
-
-    }
-
-    .List-item{
-       word-spacing: 5px;
-    }
-
-    button{
-        display: flex;
-        font-size: 25px;
-        color: blue;
-       width: 30px;
-    }
-</style>
 
 <body>
     
-
+<!-- 
     <div class="container">
         
   <h2> To Do List</h2>
@@ -114,7 +23,21 @@
   </ul>
 
 
-    </div>
+    </div> -->
+
+<div class="container">
+    <h2>To Do List</h2>
+    <input type="text" id="addTask" placeholder="Enter Your Task">
+    <input type="date" id="Date">
+    <button id="AddTask" onclick="Addtask()">Add Task</button>
+
+
+<ul id="TaskList">
+
+
+</ul>
+
+</div>
 
    
 

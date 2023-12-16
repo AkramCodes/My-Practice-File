@@ -1,10 +1,10 @@
 
 function AddTask() {
-    
-    // + document.querySelector('#DateTime').value
 
 
-    // console.log("%%%%%%%",document.querySelector('#DateTime').value)
+
+
+
     let dateTime = document.querySelector('#DateTime')
 
     let Isha = document.querySelector('#task');
@@ -25,6 +25,7 @@ function AddTask() {
 
     let li = document.createElement("li");
     let span = document.createElement("span")
+
 
     let button = document.createElement("button")
 

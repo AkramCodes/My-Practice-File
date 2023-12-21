@@ -41,22 +41,22 @@
 
             <div class="mb-3">
                 <label for="" class="form-label"> Item Name</label>
-                <input type="text" id="item-name" class="form-control rounded-1" placeholder="Enter item name">
+                <input type="text" id="item-name" class="form-control rounded-1" placeholder="Enter item name" required>
             </div>
 
             <div class="mb-3">
                 <label for="" class="form-label">Base item Price</label>
-                <input type="number" id="base-item-price" class="form-control rounded-1" placeholder="eg. Rice 20kg"  onkeyup="putTotal()" >
+                <input type="number" id="base-item-price" class="form-control rounded-1" placeholder="eg. Rice 20kg"  onkeyup="putTotal()" required>
             </div>
 
             <div class="mb-3">
                 <label for="" class="form-label"> Qty.</label>
-                <input type="number" id="item-qty" class="form-control rounded-1" placeholder="eg. 10pcs"  onkeyup="putTotal()" >
+                <input type="number" id="item-qty" class="form-control rounded-1" placeholder="eg. 10pcs"  onkeyup="putTotal()"  >
             </div>
 
             <div class="mb-3">
                 <label for="" class="form-label"> Total Amount</label>
-                <input type="number" id="total-amount" class="form-control rounded-1" readonly>
+                <input type="number" id="total-amount" class="form-control rounded-1" readonly >
             </div>
             <div class="mb-3">
                 <button type="button" class="btn btn-success rounded-1 content" id="add-item" onclick="addItem()" >Add Item</button>

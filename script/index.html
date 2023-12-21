@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            max-width: 1000px;
+            margin: auto;
+            padding: 23px;
+            border: 1px solid #ccc;
+            display: flex;
+        }
+        .item{
+            width: 25%;
+            border: 1px solid #ccc;
+            padding: 24px;
+        }
+    </style>
+</head>
+<body>
+        <input type="text" id="demo">
+        <select id="select" onchange="selected(this)">
+            <option value="">Select Country</option>
+            <option value="India">India</option>
+            <option value="China" >China</option>
+            <option value="Bangladesh"  >Bangladesh</option>
+        </select>
+        <!-- checkbox, radio: checked="checked" -->
+        <label><input type="checkbox" class="checkbox"> Item 1</label>
+        <label><input type="checkbox" class="checkbox" > Item 2</label>
+        <label><input type="checkbox" class="checkbox" > Item 3</label>
+        <label><input type="checkbox" class="checkbox"> Item 4</label>
+        <button onclick="test()">Test</button>
+        <button onclick="set()">Set</button>
+        <button onclick="check()" ondblclick="checkAll()">Check</button>
+
+        <hr>
+        <div id="content"></div>
+        <hr>
+        <div class="cart-items">Cart Items: <span id="cart">0</span></div>
+        <div class="container">
+            <div class="item">
+                <h3>Javascript Course </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati amet nam illum voluptate culpa ullam provident, voluptates at sit ut doloribus, veritatis sint? Corrupti provident minus dolore id, cumque adipisci.</p>
+                <button onclick="addToCart(1,'Javascript Course')">Add To Cart</button>
+            </div>
+            <div class="item">
+                <h3>CSS Course </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati amet nam illum voluptate culpa ullam provident, voluptates at sit ut doloribus, veritatis sint? Corrupti provident minus dolore id, cumque adipisci.</p>
+                <button onclick="addToCart(2,'Css Course')">Add To Cart</button>
+            </div>
+        </div>
+       
+
+    <script src="script.js"></script>
+</body>
+</html>

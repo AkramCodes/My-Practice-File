@@ -1,8 +1,19 @@
+let radio_button = document.querySelectorAll("roll-1")
+radio_button.checked = true;
 
+
+
+// selectors--------------------------------------------------------------------
+
+// let selection = document.querySelector("#select")
+let select_option = document.querySelectorAll("#select option")
+select_option[3].setAttribute("selected",'')
+
+// Add To Cart --------------------------------------------------------------------
 
 let add_to_cart = []
-function addToCart(id,name,qty){  
-    add_to_cart.push({id:id, name:name, Qty:1})
+function addToCart(id,name){  
+    add_to_cart.push({id:id, name:name, qty:1})
     document.querySelector("#cart").innerText = add_to_cart.length
 
     console.log(add_to_cart)

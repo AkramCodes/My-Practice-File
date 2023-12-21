@@ -23,6 +23,20 @@
         font-family: 'Poppins', sans-serif;
     }
      
+     .boxes{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+     }
+
+     .boxes #select{
+        width: 250px;
+        font-size: 25px;
+     }
+
+
     .cart-items{
         width: 100%;
         height: auto;
@@ -109,17 +123,26 @@
 
      <div class="boxes">
      <select name="selection" id="select" onchange="Onchange(this)">
-    
+        <option value="select"> Select</option>
         <option value="select"> India</option>
-        <option value="select"> China</option>
+        <option value="select"> China</option>femalefemalefemalefemalefemalefemalefemalefemalefemalefemale
         <option value="select"> Nepal</option>
         <option value="select"> Bangladesh</option>
         <option value="select"> Bharat</option>
     </select>
+   
+  <div class="radio-button">
+    <label for="male" id="roll-1">  <input type="radio" id="male" name="gender" value="30">    Male</label>
+    <label for="female" id="roll-2">  <input type="radio" id="female" name="gender" value="30">  Female</label>
 
+  </div>
+
+    
      </div>
+     
 
 
+    
     <hr>
     
         <div class="cart-items"><h2> Cart Items:</h2> <span id="cart"> 0 </span></div>
@@ -157,6 +180,18 @@
             </div>
             <div class="cart-item">
                 <h2>Boostrap Course</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, necessitatibus? Unde officiis odit tempore deleniti recusandae possimus, porro vel vitae nisi, aliquid sequi autem fugit harum repellat illum a earum!</p>
+                <button type="button" onclick="addToCart(1,'Boostrap')">add to cart</button>
+            </div>
+
+            <div class="cart-item">
+                <h2> Rubby Course</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, necessitatibus? Unde officiis odit tempore deleniti recusandae possimus, porro vel vitae nisi, aliquid sequi autem fugit harum repellat illum a earum!</p>
+                <button type="button" onclick="addToCart(1,'Boostrap')">add to cart</button>
+            </div>
+
+            <div class="cart-item">
+                <h2>Java Course</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, necessitatibus? Unde officiis odit tempore deleniti recusandae possimus, porro vel vitae nisi, aliquid sequi autem fugit harum repellat illum a earum!</p>
                 <button type="button" onclick="addToCart(1,'Boostrap')">add to cart</button>
             </div>

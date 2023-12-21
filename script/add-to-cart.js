@@ -1,4 +1,4 @@
-let radio_button = document.querySelectorAll("roll-1")
+let radio_button = document.querySelector("#female")
 radio_button.checked = true;
 
 

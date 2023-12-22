@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add To Cart</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+
+    *{
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    body{
+        font-family: 'Poppins', sans-serif;
+    }
+     
+    .cart-items{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+
+    }
+    .cart-items h2{
+        font-size: 20px;
+        font-weight: 500;
+        color: blue;
+    }
+    .cart-items span{
+        font-size: 20px;
+        font-weight: 500;
+        color: blue;
+    }
+
+    .card-box{
+        width: 100%;
+        height: 100%;
+        border: 1px solid rgb(4, 0, 255);
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+      
+
+    }
+
+    .cart-item{
+        width: 300px;
+        height:450px;
+        border: 2px solid greenyellow;
+        border-radius: 6px;
+       margin-bottom: 10px;
+    
+        
+    }
+    .cart-item h2{
+        font-size: 20px;
+        font-weight: 600;
+        color: aqua;
+
+    }
+
+    .cart-item p{
+        font-size: 15px;
+        font-weight: 400;
+        color:violet;
+      
+
+    }
+
+    .cart-item button{
+        width: 150px;
+        height: auto;
+         margin-left: 20px;
+        font-size: 15px;
+        font-weight: 600;
+        color: white;
+        background-color: blue;
+        border: none;
+        outline: none;
+        border-radius: 6px;
+
+    }
+
+    .cart-item button:hover{
+        background-color: transparent;
+        color: blue;
+        border: 3px solid blue;
+        font-weight: 600;
+        border-radius: 6px;
+        outline: none;
+
+    }
+
+    
+</style>
+</head>
+<body>
+
+     <div class="boxes">
+     <select name="selection" id="select" onchange="Onchange(this)">
+    
+        <option value="select"> India</option>
+        <option value="select"> China</option>
+        <option value="select"> Nepal</option>
+        <option value="select"> Bangladesh</option>
+        <option value="select"> Bharat</option>
+    </select>
+
+     </div>
+
+
+    <hr>
+    
+        <div class="cart-items"><h2> Cart Items:</h2> <span id="cart"> 0 </span></div>
+
+        <div class="card-box">
+
+            <div class="cart-item">
+                <h2>HTML Course</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, necessitatibus? Unde officiis odit tempore deleniti recusandae possimus, porro vel vitae nisi, aliquid sequi autem fugit harum repellat illum a earum!</p>
+                <button type="button" onclick="addToCart(1,'HTML')">add to cart</button>
+            </div>
+
+            <div class="cart-item">
+                <h2>CSS Course</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, necessitatibus? Unde officiis odit tempore deleniti recusandae possimus, porro vel vitae nisi, aliquid sequi autem fugit harum repellat illum a earum!</p>
+                <button type="button" onclick="addToCart(1, 'CSS')">add to cart</button>
+            </div>
+
+            <div class="cart-item">
+                <h2>Python Course</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, necessitatibus? Unde officiis odit tempore deleniti recusandae possimus, porro vel vitae nisi, aliquid sequi autem fugit harum repellat illum a earum!</p>
+                <button type="button" onclick="addToCart(1, 'python')">add to cart</button>
+            </div>
+
+            <div class="cart-item">
+                <h2> JavaScript Course</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, necessitatibus? Unde officiis odit tempore deleniti recusandae possimus, porro vel vitae nisi, aliquid sequi autem fugit harum repellat illum a earum!</p>
+                <button type="button" onclick="addToCart(1,'Java Script')">add to cart</button>
+            </div>
+
+            <div class="cart-item">
+                <h2>React.Js Course</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, necessitatibus? Unde officiis odit tempore deleniti recusandae possimus, porro vel vitae nisi, aliquid sequi autem fugit harum repellat illum a earum!</p>
+                <button type="button" onclick="addToCart(1,'React.Js')">add to cart</button>
+            </div>
+            <div class="cart-item">
+                <h2>Boostrap Course</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, necessitatibus? Unde officiis odit tempore deleniti recusandae possimus, porro vel vitae nisi, aliquid sequi autem fugit harum repellat illum a earum!</p>
+                <button type="button" onclick="addToCart(1,'Boostrap')">add to cart</button>
+            </div>
+
+
+
+        </div>
+
+
+    
+
+
+    <script src="add-to-cart.js"></script>
+</body>
+</html>

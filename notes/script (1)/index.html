@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- manipulate dom -->
+    <div class="container pt-3">
+        <div class="flex justify-content-end">
+            <span class="h4 d-block " id="items">0</span>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h4>Smartphone Redmi</h4>
+                        <p>Price: 45000/-</p>
+                        <button onclick="addToCart(1,'Redmi Smartphone 2023',45000,1)" class="btn btn-success btn-sm">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h4>LG Monitor 25inches</h4>
+                        <p>Price: 23000/-</p>
+                        <button onclick="addToCart(2,'LG Monitor 25inches',23000,1)" class="btn btn-success btn-sm">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h4>Smartwatch APPLS</h4>
+                        <p>Price: 10000/-</p>
+                        <button onclick="addToCart(3,'Apple smartwatch',10000,1)" class="btn btn-success btn-sm">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h4>Water Bottle</h4>
+                        <p>Price: 1200/-</p>
+                        <button onclick="addToCart(4,'Water Bottle',1200,1)" class="btn btn-success btn-sm">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+//callback function: 
+
+
+
+function calcFees(a,b,display){
+    const c = a+b
+    display(c)
+}
+
+//display data
+function display(data){
+    console.log(data)
+}
+
+
+
+function calcInterest(a,b,c,display){
+    const intx = a/b*c*100
+    display(intx)
+}
+
+calcFees(10,20,display) //display: callback, passed as an argument
+calcInterest(10,20,30,display)
+----------------------------------------
+
+function calcAvg(clBack){
+    clBack()
+}
+
+
+
+calcAvg(function(){
+
+    console.log('hello world')
+})
+
+calcAvg(function(){
+    console.log('This is another definition')
+})
+
+
+calcAvg(function(){
+    console.log('The best definition')
+})
+
+////////////////////////////
+
+function calcAvg2(clBack){
+    clBack()
+}
+
+function calBackDemo(){
+    console.log('This is from callback function - second case')
+}
+
+
+
+calcAvg2(calBackDemo)
+calcAvg2(calBackDemo)
+calcAvg2(calBackDemo)
+calcAvg2(calBackDemo)
+
+
+////////////////////////////////////
+
+setTimeout(function(){
+    
+}, 1000)
+
+----------------------------------------------
+//how to make functions: ES5 + ES6
+
+// function move(a,b){
+//     console.log('Moving.....')
+// }
+
+// const move = function(a,b){
+//     console.log('Moving.....')
+// }
+
+
+//arrow function  : ES6
+const move  = (a,b) => {
+
+}
+
+
+
+move(10,20)
